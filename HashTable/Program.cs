@@ -7,7 +7,7 @@
                 Console.WriteLine("Welcome!!Implementing HashTable Data Struture");
                 MyMapNode<string, string> hash = new MyMapNode<string, string>(5);
                 MyMapNode<string, string> para = new MyMapNode<string, string>(17);
-                Console.WriteLine("\n1.Create HashTable \n2.Find Frequency Of Word");
+                Console.WriteLine("\n1.Create HashTable \n2.Find Frequency Of Word \n3.Remove Word");
                 Console.WriteLine("Enter the option to choice from above ");
                 int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
@@ -33,7 +33,7 @@
                 Console.WriteLine("4th index value " + hash4);
                 Console.WriteLine("5th index value " + hash5);
                 break;
-            case 2:
+              case 2:
                     Console.WriteLine("Find Frequency of Word in a Paragraph ");
                     para.Add("0", "Paranoids");
                     para.Add("1", "are");
@@ -92,6 +92,10 @@
                     Console.WriteLine("16th index value " + para16);
                     Console.WriteLine("17th index value " + para17);
                     Console.WriteLine("18th index value " + para18);
+                    break;
+                case 3:
+                    para.Remove("17", "avoidable");
+                    Console.WriteLine("Word is removed from the paragraph");
                     break;
                 default:
                 Console.WriteLine("Please enter correct option ");
